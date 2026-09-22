@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: #14141c;
+  color: #f2f1ec;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.1rem 1.6rem;
+  background: #1d1d29;
+  border-bottom: 1px solid #2a2a3a;
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+}
+
+.navbar__title {
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.app__content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.8rem 1.6rem 3rem;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.8rem;
+}
+
+.search-bar__input {
+  flex: 1;
+  padding: 0.65rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #34344a;
+  background: #1d1d29;
+  color: #f2f1ec;
+  font-size: 0.95rem;
+}
+
+.search-bar__input:focus {
+  outline: 2px solid #e0a458;
+}
+
+.search-bar__button {
+  padding: 0.65rem 1.3rem;
+  border-radius: 6px;
+  border: none;
+  background: #e0a458;
+  color: #1d1d29;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-bar__button:hover {
+  background: #c98f45;
+}
+
+.app__status {
+  color: #a9a8b8;
+  font-size: 0.95rem;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.2rem;
+}
+
+.movie-card {
+  background: #1d1d29;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #2a2a3a;
+}
+
+.movie-card__poster {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.movie-card__info {
+  padding: 0.7rem 0.8rem;
+}
+
+.movie-card__title {
+  font-size: 0.9rem;
+  margin: 0 0 0.25rem;
+  line-height: 1.3;
+}
+
+.movie-card__year {
+  font-size: 0.8rem;
+  color: #a9a8b8;
+  margin: 0;
+}
